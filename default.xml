@@ -84,9 +84,7 @@
 
     <project name="smaccm.git" path="projects/smaccm" remote="smaccm" revision="develop">
         <!-- symlinks to make the project structure fit the build system -->
-	<linkfile src="models/Trusted_Build_Test/test_uart_active2" dest="apps/test_uart_active2"/>
 	<linkfile src="models/Trusted_Build_Test/udp" dest="apps/udp"/>
-	<linkfile src="models/Trusted_Build_Test/uart" dest="apps/uart"/>
 	<linkfile src="models/Trusted_Build_Test/vChan_demo" dest="apps/vChan_demo"/>
     </project>
 
