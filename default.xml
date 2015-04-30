@@ -64,8 +64,12 @@
 
     <project name="camkes-vm.git" path="projects/vm">
         <!-- symlinks to make the project structure fit the build system -->
-        <linkfile src="Kconfig" dest="Kconfig"/>
+        <!--
+	<linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
+	-->
+        <linkfile src="../../.repo/manifests/Kconfig" dest="Kconfig"/>
+        <linkfile src="../../.repo/manifests/configs" dest="configs"/>
         <linkfile src="../../tools/camkes/docs/index.md" dest="camkes_README.md"/>
         <linkfile src="../../kernel/libsel4" dest="libs/libsel4"/>
         <linkfile src="../../tools/camkes/libsel4camkes" dest="libs/libsel4camkes"/>
@@ -84,6 +88,12 @@
 	<linkfile src="models/Trusted_Build_Test/udp" dest="apps/udp"/>
 	<linkfile src="models/Trusted_Build_Test/uart" dest="apps/uart"/>
 	<linkfile src="models/Trusted_Build_Test/vChan_demo" dest="apps/vChan_demo"/>
+    </project>
+
+    <project name="camkes-vchan-test.git" path="projects/camkes-vchan-test" remote="smaccm">
+	<!-- symlinks to make the project structure fit the build system -->
+        <linkfile src="apps/vchan-test" dest="apps/vchan-test"/>
+	<linkfile src="apps/vchan-test-aadl" dest="apps/vchan-test-aadl"/>
     </project>
 
 </manifest>
