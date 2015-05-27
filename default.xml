@@ -16,6 +16,10 @@
         fetch="../seL4"
     />
 
+    <remote name="seL4-projects"
+        fetch="../seL4-projects"
+    />
+
     <remote name="smaccm"
 	fetch="."
     />
@@ -61,6 +65,8 @@
     <project name="libboost.git" path="libs/libboost"/>
     <project name="libsel4bench.git" path="libs/libsel4bench"/>
     <project name="libethdrivers.git" path="libs/libethdrivers"/>
+    
+    <project remote="seL4-projects" name="global-components.git" path="projects/global-components"/>
 
     <project name="camkes-vm.git" path="projects/vm">
         <!-- symlinks to make the project structure fit the build system -->
